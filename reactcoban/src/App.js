@@ -24,6 +24,7 @@ function App() {
         <Card2></Card2>
         <Card2></Card2>
       </CardList>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </ThemeProvider>
   );
 }
