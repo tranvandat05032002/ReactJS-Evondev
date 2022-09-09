@@ -1,21 +1,30 @@
 import "./App.css";
+import { GlobalStyled } from "./GlobalStyled";
+import { ThemeProvider } from "styled-components";
 import Card from "./component/card/Card";
+import Card2 from "./component/card/Card2";
 import CardList from "./component/card/CardList";
-import Game2 from "./component/tictactoe/Game2";
+
+const theme = {
+  colors: {
+    blue: "#9999ff",
+  },
+  pink: "#ff99ff",
+};
 
 function App() {
   return (
-    <div className="wrapper">
-      {/* <CardList>
-        <Card secondary={true}></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-      </CardList> */}
-      <Game2 />
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyled></GlobalStyled>
+      <CardList>
+        <Card2 secondary={true}></Card2>
+        <Card2></Card2>
+        <Card2></Card2>
+        <Card2></Card2>
+        <Card2></Card2>
+        <Card2></Card2>
+      </CardList>
+    </ThemeProvider>
   );
 }
 
