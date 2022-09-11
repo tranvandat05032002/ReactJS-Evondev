@@ -1,6 +1,6 @@
 import "./App.css";
-// eslint-disable-next-line
 import CardTailWind from "./component/card/CardTailwind";
+import CardList from "./component/card/CardList";
 
 // const theme = {
 //   colors: {
@@ -13,8 +13,14 @@ function App() {
   return (
     // <ThemeProvider theme={theme}>
     <div>
-      {/* <CardTailWind></CardTailWind> */}
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <CardList>
+        <CardTailWind secondary></CardTailWind>
+        <CardTailWind></CardTailWind>
+        <CardTailWind></CardTailWind>
+        <CardTailWind></CardTailWind>
+        <CardTailWind></CardTailWind>
+        <CardTailWind></CardTailWind>
+      </CardList>
     </div>
     // </ThemeProvider>
   );

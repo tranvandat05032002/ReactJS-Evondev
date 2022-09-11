@@ -23,11 +23,11 @@ const StyledCard = styled.div`
     content: "";
     left: 50%;
     bottom: 0%;
+    transform: translate(-50%, 50%);
     width: calc(100% - 36px * 2);
     border-radius: 20px;
     background-color: white;
     z-index: 10;
-    transform: translate(-50%, 50%);
     padding: 20px;
 
     .card-top {
@@ -71,6 +71,7 @@ const StyledCard = styled.div`
         font-size: 18px;
         font-weight: 500;
         margin: 0;
+        // props
         color: ${(props) => props.theme.colors.blue};
       }
       .card-amount {
