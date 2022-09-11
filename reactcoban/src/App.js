@@ -1,31 +1,22 @@
 import "./App.css";
-import { GlobalStyled } from "./GlobalStyled";
-import { ThemeProvider } from "styled-components";
-import Card from "./component/card/Card";
-import Card2 from "./component/card/Card2";
-import CardList from "./component/card/CardList";
+// eslint-disable-next-line
+import CardTailWind from "./component/card/CardTailwind";
 
-const theme = {
-  colors: {
-    blue: "#9999ff",
-  },
-  pink: "#ff99ff",
-};
+// const theme = {
+//   colors: {
+//     blue: "#9999ff",
+//   },
+//   pink: "#ff99ff",
+// };
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyled></GlobalStyled>
-      <CardList>
-        <Card2 secondary={true}></Card2>
-        <Card2></Card2>
-        <Card2></Card2>
-        <Card2></Card2>
-        <Card2></Card2>
-        <Card2></Card2>
-      </CardList>
+    // <ThemeProvider theme={theme}>
+    <div>
+      {/* <CardTailWind></CardTailWind> */}
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </ThemeProvider>
+    </div>
+    // </ThemeProvider>
   );
 }
 
