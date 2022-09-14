@@ -1,6 +1,5 @@
 import "./App.css";
-import CardTailWind from "./component/card/CardTailwind";
-import CardList from "./component/card/CardList";
+import Photos from "./component/photo/Photos";
 
 // const theme = {
 //   colors: {
@@ -13,14 +12,7 @@ function App() {
   return (
     // <ThemeProvider theme={theme}>
     <div>
-      <CardList>
-        <CardTailWind secondary></CardTailWind>
-        <CardTailWind></CardTailWind>
-        <CardTailWind></CardTailWind>
-        <CardTailWind></CardTailWind>
-        <CardTailWind></CardTailWind>
-        <CardTailWind></CardTailWind>
-      </CardList>
+      <Photos></Photos>
     </div>
     // </ThemeProvider>
   );
