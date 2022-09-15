@@ -1,5 +1,7 @@
 import "./App.css";
+import AgainPhoto from "./component/photo/AgainPhoto";
 import Photos from "./component/photo/Photos";
+import HackerNews from "./component/news/HackerNews";
 
 // const theme = {
 //   colors: {
@@ -12,7 +14,8 @@ function App() {
   return (
     // <ThemeProvider theme={theme}>
     <div>
-      <Photos></Photos>
+      {/* <AgainPhoto></AgainPhoto> */}
+      <HackerNews></HackerNews>
     </div>
     // </ThemeProvider>
   );
