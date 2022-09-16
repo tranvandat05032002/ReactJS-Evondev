@@ -11,13 +11,15 @@ const initialValue = {
 const hackerNewsReducer = (state, action) => {
   switch (action.type) {
     case "SET_DATA": {
+      // {...state} in return, it is a copy of const newState = JSON.parse(JSON.stringify(state))
+      // --> create a copy of state previous
       return { ...state, hits: action.payload };
-    }
-    case "SET_QUERY": {
-      return { ...state, query: action.payload };
     }
     case "SET_LOADING": {
       return { ...state, loading: action.payload };
+    }
+    case "SET_QUERY": {
+      return { ...state, query: action.payload };
     }
     case "SET_ERROR": {
       return { ...state, errorMessage: action.payload };
@@ -79,6 +81,10 @@ const HackerNewsWithUseReducer = () => {
 
         <button
           className="bg-red-400 text-white font-normal py-2 px-5 rounded-full"
+          disabled={state.loading}
+          style={{
+            opacity: state.loading ? "0.25" : "1",
+          }}
           onClick={() => {
             dispatch({
               type: "SET_URL",

@@ -1,5 +1,6 @@
 import "./App.css";
-import HackerNewsWithUseReducer from "./component/news/HackerNewsWithUseReducer";
+import Counter from "./component/useRef/Counter/Counter";
+// import HackerNewsWithUseReducer from "./component/news/HackerNewsWithUseReducer";
 // import AgainPhoto from "./component/photo/AgainPhoto";
 // import Photos from "./component/photo/Photos";
 // import HackerNews from "./component/news/HackerNews";
@@ -15,9 +16,7 @@ function App() {
   return (
     // <ThemeProvider theme={theme}>
     <div>
-      {/* <AgainPhoto></AgainPhoto> */}
-      {/* <HackerNews></HackerNews> */}
-      <HackerNewsWithUseReducer></HackerNewsWithUseReducer>
+      <Counter></Counter>
     </div>
     // </ThemeProvider>
   );
