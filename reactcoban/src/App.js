@@ -1,5 +1,6 @@
 import "./App.css";
-import Counter from "./component/useRef/Counter/Counter";
+// import Counter from "./component/useRef/Counter/Counter";
+import CounterClass from "./component/useRef/Counter/CounterClass";
 // import HackerNewsWithUseReducer from "./component/news/HackerNewsWithUseReducer";
 // import AgainPhoto from "./component/photo/AgainPhoto";
 // import Photos from "./component/photo/Photos";
@@ -16,7 +17,8 @@ function App() {
   return (
     // <ThemeProvider theme={theme}>
     <div>
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
+      <CounterClass></CounterClass>
     </div>
     // </ThemeProvider>
   );
