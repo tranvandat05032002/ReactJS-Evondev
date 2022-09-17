@@ -1,6 +1,8 @@
 import "./App.css";
+import FocusInput from "./component/useRef/input/FocusInput";
+import TextareaAutoResize from "./component/useRef/TextareaAutoResize";
 // import Counter from "./component/useRef/Counter/Counter";
-import CounterClass from "./component/useRef/Counter/CounterClass";
+// import CounterClass from "./component/useRef/Counter/CounterClass";
 // import HackerNewsWithUseReducer from "./component/news/HackerNewsWithUseReducer";
 // import AgainPhoto from "./component/photo/AgainPhoto";
 // import Photos from "./component/photo/Photos";
@@ -18,7 +20,9 @@ function App() {
     // <ThemeProvider theme={theme}>
     <div>
       {/* <Counter></Counter> */}
-      <CounterClass></CounterClass>
+      {/* <CounterClass></CounterClass> */}
+      {/* <FocusInput></FocusInput> */}
+      <TextareaAutoResize></TextareaAutoResize>
     </div>
     // </ThemeProvider>
   );

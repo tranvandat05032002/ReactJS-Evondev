@@ -3,7 +3,7 @@ class CounterClass extends React.Component {
   constructor() {
     super();
     this.state = {
-      counter: 10,
+      counter: 60,
     };
   }
   componentDidMount() {
