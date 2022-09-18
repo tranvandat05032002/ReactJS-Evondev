@@ -1,13 +1,14 @@
 import "./App.css";
-import DropDown from "./component/useRef/DropDown";
-import FocusInput from "./component/useRef/input/FocusInput";
-import TextareaAutoResize from "./component/useRef/TextareaAutoResize";
+import Blog from "./component/youtube/Blog";
+// import HackerNews from "./component/news/HackerNews";
+// import DropDown from "./component/useRef/DropDown";
+// import FocusInput from "./component/useRef/input/FocusInput";
+// import TextareaAutoResize from "./component/useRef/TextareaAutoResize";
 // import Counter from "./component/useRef/Counter/Counter";
 // import CounterClass from "./component/useRef/Counter/CounterClass";
 // import HackerNewsWithUseReducer from "./component/news/HackerNewsWithUseReducer";
 // import AgainPhoto from "./component/photo/AgainPhoto";
 // import Photos from "./component/photo/Photos";
-// import HackerNews from "./component/news/HackerNews";
 
 // const theme = {
 //   colors: {
@@ -24,7 +25,9 @@ function App() {
       {/* <CounterClass></CounterClass> */}
       {/* <FocusInput></FocusInput> */}
       {/* <TextareaAutoResize></TextareaAutoResize> */}
-      <DropDown></DropDown>
+      {/* <DropDown></DropDown> */}
+      {/* <HackerNews></HackerNews> */}
+      <Blog></Blog>
     </div>
     // </ThemeProvider>
   );
