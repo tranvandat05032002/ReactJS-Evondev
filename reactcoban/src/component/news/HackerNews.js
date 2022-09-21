@@ -3,8 +3,19 @@ import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
 
 // API search: https://hn.algolia.com/api/v1/search?query=react
-
 const HackerNews = () => {
+  // result problem to unmounted data
+
+  const isMounted = useRef(true);
+
+  useEffect(() => {
+    // current empty
+    // do something
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
+
   //hook
   const [hits, setHits] = useState([]);
   const [query, setQuery] = useState("");
