@@ -1,10 +1,12 @@
 import "./App.css";
-import HackerNewsCustomerHook from "./component/news/HackerNewsCustomerHook";
+import SidebarMenu from "./component/SidebarMenu/SidebarMenu";
+import CustomerDropDown from "./component/useRef/DropDown/CustomerDopDown";
 
 function App() {
   return (
     <div>
-      <HackerNewsCustomerHook></HackerNewsCustomerHook>
+      <CustomerDropDown></CustomerDropDown>
+      <SidebarMenu></SidebarMenu>
     </div>
   );
 }
