@@ -1,25 +1,13 @@
 import React from "react";
-import { useState } from "react";
+import useHandleChange from "../hooks/useHandleChange";
 
-const Input = () => {
-  const [values, setValues] = useState({
+const Form = () => {
+  const { values, handleChange } = useHandleChange({
     fullName: "",
     email: "",
     hobby: "",
   });
   console.log(values);
-  //   console.log(message);
-  //handle onchange of tagName input
-  const handleInputChange = (event) => {
-    //ternary operator
-    setValues({
-      ...values,
-      [event.target.name]:
-        event.target.type === "checkbox"
-          ? event.target.checked
-          : event.target.value,
-    });
-  };
   return (
     <div className="p-5">
       <div className="flex gap-x-5">
@@ -28,20 +16,20 @@ const Input = () => {
           placeholder="Enter your name"
           type="text"
           name="fullName"
-          onChange={handleInputChange}
+          onChange={handleChange}
         />
         <input
           className="w-full max-w-[300px] border border-gray-400 p-3 rounded-lg"
           placeholder="Enter your email"
           type="email"
           name="email"
-          onChange={handleInputChange}
+          onChange={handleChange}
         />
 
-        <input type="checkbox" name="hobby" onChange={handleInputChange} />
+        <input type="checkbox" name="hobby" onChange={handleChange} />
       </div>
     </div>
   );
 };
 
-export default Input;
+export default Form;
