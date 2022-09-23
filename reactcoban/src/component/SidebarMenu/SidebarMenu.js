@@ -9,7 +9,7 @@ const SidebarMenu = () => {
   return (
     <div>
       <button
-        className="px-5 py-3 bg-red-300 text-white rounded-lg ml-5"
+        className="px-5 py-3 bg-red-300 text-white rounded-lg ml-5 cursor-pointer"
         onClick={() => setShow(true)}
       >
         Show Menu

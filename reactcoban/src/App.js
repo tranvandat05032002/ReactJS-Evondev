@@ -1,12 +1,10 @@
 import "./App.css";
-import SidebarMenu from "./component/SidebarMenu/SidebarMenu";
-import CustomerDropDown from "./component/useRef/DropDown/CustomerDopDown";
+import Input from "./component/Form/Input";
 
 function App() {
   return (
     <div>
-      <CustomerDropDown></CustomerDropDown>
-      <SidebarMenu></SidebarMenu>
+      <Input></Input>
     </div>
   );
 }
