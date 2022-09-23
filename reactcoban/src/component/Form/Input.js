@@ -5,17 +5,23 @@ const Input = () => {
   const [values, setValues] = useState({
     fullName: "",
     email: "",
+    hobby: "",
   });
   console.log(values);
   //   console.log(message);
   //handle onchange of tagName input
   const handleInputChange = (event) => {
-    // setValues(event.target.value);
-    // console.log(event.target.value);
-    setValues({
-      ...values,
-      [event.target.name]: event.target.value,
-    });
+    if (event.target.type === "checkbox") {
+      setValues({
+        ...values,
+        [event.target.name]: event.target.checked,
+      });
+    } else {
+      setValues({
+        ...values,
+        [event.target.name]: event.target.value,
+      });
+    }
   };
   return (
     <div className="p-5">
@@ -34,6 +40,8 @@ const Input = () => {
           name="email"
           onChange={handleInputChange}
         />
+
+        <input type="checkbox" name="hobby" onChange={handleInputChange} />
       </div>
     </div>
   );
