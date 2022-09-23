@@ -11,17 +11,14 @@ const Input = () => {
   //   console.log(message);
   //handle onchange of tagName input
   const handleInputChange = (event) => {
-    if (event.target.type === "checkbox") {
-      setValues({
-        ...values,
-        [event.target.name]: event.target.checked,
-      });
-    } else {
-      setValues({
-        ...values,
-        [event.target.name]: event.target.value,
-      });
-    }
+    //ternary operator
+    setValues({
+      ...values,
+      [event.target.name]:
+        event.target.type === "checkbox"
+          ? event.target.checked
+          : event.target.value,
+    });
   };
   return (
     <div className="p-5">
