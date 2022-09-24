@@ -11,7 +11,7 @@ export default function useDropDown(tagName = "button") {
         dropdownRef.current &&
         !dropdownRef.current.contains(e.target) &&
         !e.target.matches(tagName)
-      ) {
+      ) { 
         setShow(false);
       }
     };
